@@ -1,0 +1,7 @@
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar\
+-input / home/cloudera/words.txt \
+-output /home/cloudera/solution1 \
+-mapper mapper.py \
+-reducer reducer.py \
+-file /home/cloudera/mapper.py \
+-file /home/cloudera/reducer.py
